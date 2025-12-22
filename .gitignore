@@ -1,0 +1,16 @@
+# Neovim swap and undo files
+.netrwhist
+*.swp
+*.swo
+undo/
+
+# MacOS noise
+.DS_Store
+
+# Zsh history (if you accidentally moved it here)
+.zsh_history
+
+# Local environment variables (keep secrets out!)
+.env
+.zsh_private
+
