@@ -29,14 +29,18 @@ return {
     },
     build = "make tiktoken", -- Compiles a token counter for better chat performance
     opts = {
-      model = "claude-haiku-4.5", -- Specify your preferred model
-      temperature = 0.1, -- Lower temperature for more focused responses
-      window = {
-        layout = 'float', -- Use a floating window for the chat UI
-        width = 0.5,
-      },
-      auto_insert_mode = true, -- Automatically enter insert mode when chat window opens
+        temperature = 0,1,
     },
+    -- To delete later
+    -- opts = {
+    --   model = "claude-haiku-4.5", -- Specify your preferred model
+    --   temperature = 0.1, -- Lower temperature for more focused responses
+    --   window = {
+    --     layout = 'float', -- Use a floating window for the chat UI
+    --     width = 0.5,
+    --   },
+    --   auto_insert_mode = true, -- Automatically enter insert mode when chat window opens
+    -- },
     keys = {
       -- Keymap to open the chat window
       { "<leader>cc", function() require("CopilotChat").toggle() end, desc = "Toggle Copilot Chat" },
