@@ -125,7 +125,13 @@ return {
 				},
 			})
 
-			vim.lsp.enable({ "lua_ls", "ts_ls", "basedpyright", "ruff" })
+			vim.lsp.config("clangd", {
+				init_options = {
+					fallbackFlags = { "--std=c++23" },
+				},
+			})
+
+			vim.lsp.enable({ "lua_ls", "ts_ls", "clangd", "basedpyright", "ruff", "rust_analyzer" })
 
 			--lsp attach, some of these keymaps suck, I'll probably remove them later, theres default bindings already for alot of these
 			vim.api.nvim_create_autocmd("LspAttach", {
