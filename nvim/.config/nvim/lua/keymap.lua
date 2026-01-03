@@ -24,4 +24,8 @@ vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tms<CR>")
 -- Close quickfix list
 vim.keymap.set("n", "<leader>qf", "<cmd>cclose<CR>", { desc = "Close Quickfix List" })
 
+--move down and up page but keep centered
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
 

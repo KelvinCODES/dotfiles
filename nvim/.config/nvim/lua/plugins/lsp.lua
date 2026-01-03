@@ -107,7 +107,7 @@ return {
 
 			require("mason").setup()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "ts_ls", "basedpyright", "ruff" },
+				ensure_installed = { "lua_ls", "ts_ls", "clangd", "basedpyright", "ruff", "rust_analyzer" },
 			})
 
 			vim.lsp.config("*", { capabilities = capabilities })

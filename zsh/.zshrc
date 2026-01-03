@@ -21,3 +21,5 @@ alias ls='eza --icons --group-directories-first'
 alias ll='eza --icons --group-directories-first -lh --git'
 alias la='eza --icons --group-directories-first -a'
 
+#enable starship
+eval "$(starship init zsh)"

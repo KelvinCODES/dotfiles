@@ -1,0 +1,12 @@
+# Background & Effects
+# background-opacity = 0.85
+# background-blur = 16
+theme = "Catppuccin Mocha"
+# font-family = "Hack Nerd Font Mono"
+
+# Window Padding
+window-padding-x = 10
+window-padding-y = 10
+
+# macOS Titlebar (Choose one)
+# macos-titlebar-style = hidden
