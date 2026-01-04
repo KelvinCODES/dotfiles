@@ -5,11 +5,11 @@ return {
   cmd = "Trouble",
   keys = {
         { "<leader>tt", "<cmd>Trouble diagnostics toggle<cr>", desc = "Diagnostics (Trouble)" },
-        { "<leader>tS", "<cmd>Trouble lsp toggle<cr>", desc = "LSP references/definitions/... (Trouble)" },
-        { "<leader>tL", "<cmd>Trouble loclist toggle<cr>", desc = "Location List (Trouble)" },
-        { "<leader>tQ", "<cmd>Trouble qflist toggle<cr>", desc = "Quickfix List (Trouble)" },
+        { "<leader>ts", "<cmd>Trouble lsp toggle<cr>", desc = "LSP references/definitions/... (Trouble)" },
+        { "<leader>tl", "<cmd>Trouble loclist toggle<cr>", desc = "Location List (Trouble)" },
+        { "<leader>tq", "<cmd>Trouble qflist toggle<cr>", desc = "Quickfix List (Trouble)" },
         {
-          "[d",
+          "[t",
           function()
             if require("trouble").is_open() then
               require("trouble").prev({ skip_groups = true, jump = true })
@@ -23,7 +23,7 @@ return {
           desc = "Previous Trouble/Quickfix Item",
         },
         {
-          "]d",
+          "]t",
           function()
             if require("trouble").is_open() then
               require("trouble").next({ skip_groups = true, jump = true })
