@@ -6,6 +6,7 @@ return	{
         ['<C-h>'] = false, -- Disables horizontal split
         ['<C-t>'] = false, -- Disables opening in a new tab
         ['<C-s>'] = false, -- Disables vertical split
+        ['<C-l>'] = false, -- Disables refreshing directory
     }},
     dependencies = { { "nvim-mini/mini.icons", opts = {} } },
     --dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if you prefer
