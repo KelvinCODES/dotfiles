@@ -10,6 +10,12 @@ return {
 					filename_first = true,
 				},
 			},
+			sources = {
+				grep = {
+					-- Explicitly ensure grep uses this formatter setting
+					formatters = { file = { filename_first = true } },
+				},
+			},
 		},
 		-- maybe delete gh later and the key map below to open PRs
 		-- decide between gh and octo
