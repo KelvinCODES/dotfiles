@@ -14,7 +14,7 @@ return {
         vim.keymap.set("n", "<leader>gh", "<cmd>Gitsigns preview_hunk<CR>", { desc = "Preview Git Hunk" })
 
          -- Navigation Keymaps
-        vim.keymap.set("n", "]c", "<cmd>Gitsigns nav_hunk next<CR>", { desc = "Next Git Hunk" })
-        vim.keymap.set("n", "[c", "<cmd>Gitsigns nav_hunk prev<CR>", { desc = "Previous Git Hunk" })
+        vim.keymap.set("n", "[c", "<cmd>Gitsigns nav_hunk next<CR>", { desc = "Next Git Hunk" })
+        vim.keymap.set("n", "]c", "<cmd>Gitsigns nav_hunk prev<CR>", { desc = "Previous Git Hunk" })
     end
 }
